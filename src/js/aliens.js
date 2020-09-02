@@ -23,19 +23,20 @@ export const changeState = (prop) => { //adds abilities to the things (made with
 
 export const durian = storeState();
 export const chili = storeState();
-
 export const human = storeState();
-b
-export const alienBb = changeState("infected")(true);
-export const infectedHuman = human(alienBb);
+
+export const alienHeight = changeState("height")("7 feet");
+export const alienBb = storeState();
+
+export const alienQueen = alienBb(alienHeight);
+
+// export const explodesFromChest = human(alienQueen);
+
 
 // // durian = food, and the properites are "stinky"
 
-export const isStinky = changeState("stinky")("yes");
 // export const notStinky = changeState("stinky")("nope");
 
-export const stinkyDurian = durian(isStinky);
 
-
-const objArr = {stinky: "yes", sweet: "yes", size: "large"}
+// const objArr = {stinky: "yes", sweet: "yes", size: "large"}
 // export const notStinkyDurian = stinkyDurian(notStinky);

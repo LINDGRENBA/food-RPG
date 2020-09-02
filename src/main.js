@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import x from './js/foods.js';
+import x from './js/aliens.js';
 
 $(document).ready(function () {
   $('#x ').click(function () {
