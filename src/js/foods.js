@@ -22,9 +22,11 @@ export const changeState = (prop) => { //adds abilities to the things (made with
 };
 
 export const durian = storeState();
-// durian = food, and the properites are "stinky"
-export const isStinky = changeState("stinky")("yes.");
-export const notStinky = changeState("stinky")("nope");
+export const chili = storeState();
 
-export const stinkyDurian = durian(isStinky);
-export const notStinkyDurian = stinkyDurian(notStinky);
+// // durian = food, and the properites are "stinky"
+// export const isStinky = changeState("stinky")("yes.");
+// export const notStinky = changeState("stinky")("nope");
+
+// export const stinkyDurian = durian(isStinky);
+// export const notStinkyDurian = stinkyDurian(notStinky);
