@@ -1,4 +1,4 @@
-export const storeState = () => {
+export const storeState = () => {  // food //
   let currentState = {};
   return (stateChangeFunction = (state) => state) => {
     const newState = stateChangeFunction(currentState);
@@ -9,7 +9,7 @@ export const storeState = () => {
 
 // start of Change State
 
-export const changeState = (prop) => { //adds abilities to the things (made with code above)
+export const changeState = (prop) => { //adds abilities to the things (made with code above) // property //
   // soil is property
   return (value) => {
     // 5 is passed in here
@@ -22,7 +22,7 @@ export const changeState = (prop) => { //adds abilities to the things (made with
 };
 
 export const durian = storeState();
-
+// durian = food, and the properites are "stinky"
 export const isStinky = changeState("stinky")("yes.");
 export const notStinky = changeState("stinky")("nope");
 
