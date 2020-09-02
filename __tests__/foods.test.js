@@ -5,17 +5,10 @@ import { chili } from "./../src/js/foods.js";
 import { isStinky } from "./../src/js/foods.js";
 import { notStinky } from "./../src/js/foods.js";
 
-describe(" ", () => {
-  beforeEach(() => {
-    stateControl();
-  });
-
-  afterEach(() => {
-
-  });
+describe("Foods", () => {
 
   test("should determine if an object is created", () => {
-    expect(durian).toEqual({});
+    expect(durian()).toEqual({});
   });
 
   // test("should determine if an objects state is changed", () => {
