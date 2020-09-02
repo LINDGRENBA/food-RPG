@@ -20,3 +20,11 @@ export const changeState = (prop) => { //adds abilities to the things (made with
     });
   };
 };
+
+export const durian = storeState();
+
+export const isStinky = changeState("stinky")("yes.");
+export const notStinky = changeState("stinky")("nope");
+
+export const stinkyDurian = durian(isStinky);
+export const notStinkyDurian = stinkyDurian(notStinky);
